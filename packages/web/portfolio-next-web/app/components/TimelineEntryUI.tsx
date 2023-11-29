@@ -100,7 +100,10 @@ export default function TimelineEntryIU(entry: TimelineEntryProps) {
         {renderTimelineEntryHeader(entry)}
         {renderTimelineEntryDate(entry)}
       </div>
-      <p className="font-Roboto">{entry.content}</p>
+      <div>
+        <span className="font-Roboto">{entry.content}</span>
+      </div>
+
       {renderSkillsSection()}
     </div>
   );

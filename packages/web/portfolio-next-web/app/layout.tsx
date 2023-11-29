@@ -1,13 +1,26 @@
 import "./globals.css";
-import type { Metadata } from "next";
+import { Metadata, Viewport } from "next";
 import { Providers } from "./providers";
 import Footer from "./Footer";
 import Header from "./components/Header/Header";
 
 export const metadata: Metadata = {
   title: "Mister Joessef Portfolio",
+  keywords: [
+    "misterjoessef",
+    "ai",
+    "entrepreneur",
+    "social networking",
+    "gaming",
+    "openai",
+  ],
+  metadataBase: new URL("https://mltask.com"),
   description: "checkout @misterjoessef everywhere",
-  viewport: "width=device-width, initial-scale=1", // --> <meta name="viewport" content="width=device-width, initial-scale=1"/>
+};
+export const viewport: Viewport = {
+  themeColor: "black",
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({
